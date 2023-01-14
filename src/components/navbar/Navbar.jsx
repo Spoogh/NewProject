@@ -26,9 +26,9 @@ const Navbar = () => {
             <Menu />
           </div>
         </div>
-        <div className='gtp3__navbar-sign'>
+        <div className="gtp3__navbar-sign">
           <p>Sign in</p>
-          <button type='button'>Sign up</button>
+          <button className="navbutton"type="button">Sign up</button>
         </div>
         <div className="gpt3__navbar-menu">
           {toggleMenu 
@@ -38,10 +38,14 @@ const Navbar = () => {
           {toggleMenu && (
             <div className="gpt3__navbar-menu_container scale-up-center">
               <div className="gpt3__navbar-menu_container-links">
-              <Menu />
+              <p><a className="navmenutext" href="#home">Home</a></p>
+            <p><a className="navmenutext" href="#wgpt3">What is GPT3?</a></p>
+            <p><a  className="navmenutext" href="#possibility">Open AI</a></p>
+            <p><a className="navmenutext" href="#features">Case Studies</a></p>
+            <p><a className="navmenutext" href="#blog">Library</a></p>
               <div className='gtp3__navbar-menu_container-links-sign'>
           <p>Sign in</p>
-          <button type='button'>Sign up</button>
+          <button className="navbutton"type='button'>Sign up</button>
         </div>
               </div>
             </div> 

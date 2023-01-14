@@ -33,35 +33,38 @@
 }
 
 
-.gpt3__navbar-links_container p,
-.gpt2__navbar-sign p,
-.gtp3__navbar-menu_container p{
+
+
+.gpt3__navbar-sign button,
+.gpt3__navbar-menu_container button {
+    padding: 0.5rem 1rem;
     color: #fff;
+    background: #FF4820;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
-    text-transform: capitalize;
-
-    margin: 0 1rem;
-    cursor:pointer;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.gpt3__navbar-sign button,
-.gtp3__navbar-menu_container button{
+.navbutton{
     padding: 0.5rem 1rem;
     color: #fff;
-    left: 1153px;
-    background: #ff4820;
+    background: #FF4820;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size:18px;
-    line-height:25px;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
     border-radius: 5px;
-    border:0;
-    outline:none;
-    cursor:pointer;
+
 }
+
 .gpt3__navbar-menu{
     margin-left: 1rem;
 
@@ -85,10 +88,36 @@
     position: absolute;
     top:40px;
     right:0;
-    margin-top: 1re,;
+    margin-top: 1rem;
     min-width: 210px;
     border-radius: 5px;
     box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.gpt3__navbar-links_container p,
+.gpt2__navbar-sign p,
+.gtp3__navbar-menu_container p{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor:pointer;
+}
+
+.navmenutext{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor:pointer;
 }
 
 .gpt3__navbar-menu_container p{
@@ -114,6 +143,10 @@
         padding: 2rem 4rem;
     }
 
+    .navbutton{
+        display:none;
+    }
+
     .gpt3__navbar-menu{
         display: flex;
     }
@@ -128,6 +161,8 @@
     .gpt3__navbar-sign{
         display: none;
     }
+    
+ 
 
     .gpt3__navbar-menu_container{
         top: 20px;
